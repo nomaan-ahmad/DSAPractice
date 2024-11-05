@@ -31,6 +31,8 @@ Let's say we have an array: [5, 2, 9, 1, 5, 6]
     -> Linked Lists: Insertion Sort can be adapted for sorting linked lists efficiently since shifting elements only
     involves changing pointers.
 
+## Optimization : We can optimize this algorithm using a technique called binary insertion sort
+
  */
 
 /*************************************** Code **********************************************/
@@ -48,7 +50,8 @@ public class InsertionSort {
         }
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    public static void swap(int[] arr, int i, int j)
+    {
         int temp = arr[j];
         arr[j] = arr[i];
         arr[i] = temp;
