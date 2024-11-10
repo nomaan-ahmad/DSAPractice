@@ -1,6 +1,5 @@
 package LinkedList;
 
-
 class DLLNode {
     int data;
     DLLNode next;
@@ -32,5 +31,19 @@ public class ReverseADoublyLinkedList {
         }
 
         return prev;
+    }
+
+    // Reversing a Doubly Linked List using recursion
+    public DLLNode reverseRecurse(DLLNode node) {
+        if (node == null) return null;
+
+        DLLNode next = node.next;
+
+        node.next = node.prev;
+        node.prev = next;
+
+        if (node.prev == null) return node;
+
+        return reverseRecurse(node.prev);
     }
 }
