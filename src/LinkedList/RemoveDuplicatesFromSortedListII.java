@@ -1,7 +1,5 @@
 package LinkedList;
 
-import java.util.List;
-
 public class RemoveDuplicatesFromSortedListII {
 
     public static void main(String[] args) {
@@ -17,7 +15,6 @@ public class RemoveDuplicatesFromSortedListII {
     }
     public static ListNode deleteDuplicates(ListNode head) {
         if (head == null) return null;
-        
         ListNode prev = null;
         ListNode curr = head;
 
@@ -47,5 +44,4 @@ public class RemoveDuplicatesFromSortedListII {
 
         return head;
     }
-    /// Monthly meeting at 11
 }
