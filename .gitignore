@@ -33,6 +33,7 @@ bin/
 
 ### DSA.iml ###
 DSA.iml
+DSAPractice.iml
 
 ### Testing file ###
 src/main.java
