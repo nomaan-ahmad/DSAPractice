@@ -2,6 +2,8 @@ package Precomputation;
 
 import java.util.HashSet;
 
+// https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/
+
 public class UniqueLength3PalindromeSubsequences {
     private static class Pair {
         public int first;
@@ -14,7 +16,7 @@ public class UniqueLength3PalindromeSubsequences {
     }
     
     public static void main(String[] args) {
-        String s = "bbcbaba";
+        String s = "india";
         System.out.println(countPalindromicSubsequence(s));
     }
 
