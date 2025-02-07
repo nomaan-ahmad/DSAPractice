@@ -10,7 +10,7 @@ public class TopologicalSorting_I {
         System.out.println(topologicalSort(adj));
     }
 
-    /************************* Topological sorting using DFS and stack *************************/
+    /************************* Topological sorting solved by counting inDegrees *************************/
 
     private static ArrayList<Integer> topologicalSort(ArrayList<ArrayList<Integer>> adj) {
         int[] inDegrees = new int[adj.size()];
