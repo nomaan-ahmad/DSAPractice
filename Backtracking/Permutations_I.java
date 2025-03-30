@@ -26,15 +26,18 @@ public class Permutations_I {
         }
 
         for (int i = idx; i < nums.size(); i++) {
+
             int temp = nums.get(idx);
             nums.set(idx, nums.get(i));
             nums.set(i, temp);
+
 
             recurse(result, nums, idx+1);
 
             temp = nums.get(idx);
             nums.set(idx, nums.get(i));
             nums.set(i, temp);
+
         }
     }
 }
